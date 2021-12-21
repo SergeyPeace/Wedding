@@ -5,12 +5,12 @@ const Header={
            `<img class="logo_website" src="resource/images/load.png" alt="Иконка сайта" width="30px" height="30px" style="float: left; margin-right: 15px; cursor: pointer;" onclick="location.href='https://sergeypeace.github.io/AntiCinema/index.html'">
            <nav>
                <ul>
-                   <li><a href='https://sergeypeace.github.io/AntiCinema/index.html'>Главная</a></li>
-                   <li><a href='https://sergeypeace.github.io/AntiCinema/tariff/tariff.html'>Тарифы</a></li>
-                   <li><a href='https://sergeypeace.github.io/AntiCinema/stocks/stocks.html'>Акции</a></li>
-                   <li><a href='https://sergeypeace.github.io/AntiCinema/reviews/reviews.html'>Отзывы</a></li>
-                   <li><a href='https://sergeypeace.github.io/AntiCinema/photoalbums/photoalbums.html'>Фотогалерея</a></li>
-                   <li><a href='https://sergeypeace.github.io/AntiCinema/contacts/contacts.html'>Контакты</a></li>
+                   <li><a href='https://sergeypeace.github.io/Wedding/index.html'>Главная</a></li>
+                   <li><a href='https://sergeypeace.github.io/Wedding/tariff/tariff.html'>Тарифы</a></li>
+                   <li><a href='https://sergeypeace.github.io/Wedding/stocks/stocks.html'>Акции</a></li>
+                   <li><a href='https://sergeypeace.github.io/Wedding/reviews/reviews.html'>Отзывы</a></li>
+                   <li><a href='https://sergeypeace.github.io/Wedding/photoalbums/photoalbums.html'>Фотогалерея</a></li>
+                   <li><a href='https://sergeypeace.github.io/Wedding/contacts/contacts.html'>Контакты</a></li>
                </ul>
            </nav> 
            <button class="calling_form">Заказать звонок</button>`,
@@ -24,7 +24,7 @@ Vue.createApp(Header).mount('#Header')
 
 /*Добавление логотипа с ссылкой на главную страницу*/
 function logotip(){
-if(String(window.location) !== 'https://sergeypeace.github.io/AntiCinema/index.html'){
+if(String(window.location) !== 'https://sergeypeace.github.io/Wedding/index.html'){
     document.querySelector('.logo_website').src='../resource/images/load.png'
 } 
 
