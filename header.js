@@ -12,7 +12,7 @@ const Header={
                    <li><a href='https://sergeypeace.github.io/Wedding/photoalbums/photoalbums.html'>Фотогалерея</a></li>
                    <li><a href='https://sergeypeace.github.io/Wedding/contacts/contacts.html'>Контакты</a></li>
                </ul>
-           </nav> 
+               </nav>
            <div class="header__contacts">
               <div class="header__tel">
                 <span>Серёжа</span>
