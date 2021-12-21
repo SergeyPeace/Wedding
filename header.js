@@ -13,7 +13,16 @@ const Header={
                    <li><a href='https://sergeypeace.github.io/Wedding/contacts/contacts.html'>Контакты</a></li>
                </ul>
            </nav> 
-           <button class="calling_form">Заказать звонок</button>`,
+           <div class="header__contacts">
+              <div class="header__tel">
+                <span>Серёжа</span>
+                <a href="tel:+79117117782" style='font-family: "Comforter Brush", cursive; font-size: 16pt;'> +7(911)711-77-82</a>
+              </div>
+              <div class="header__tel">
+                <span>Люда</span>
+                <a href="tel:+79112623419" style='font-family: "Comforter Brush", cursive; font-size: 16pt;'> +7(911)262-34-19</a>
+              </div>
+            </div>`,
         }
     }
 }
@@ -42,41 +51,3 @@ for (let i = 0; i !== document.getElementsByTagName('a').length; i++){
     }
 }
 
-let calling_form = document.querySelector('.calling_form')
-let container = document.querySelector('.container')
-let btn_exit = document.querySelector('.btn_exit')
-let primary = document.querySelector('.primary')
-let btn_2 = document.querySelectorAll('.btn_2')
-
-calling_form.addEventListener('click', function(){
-    /*Отключение прокрутки страницы*/
-    document.body.style.overflow = "hidden"
-    container.style.display = "block"
-    container.style.top = window.scrollY + "px"
-})
-
-
-btn_exit.addEventListener('click', function(){
-    container.style.display = "none"
-    document.body.removeAttribute('style')
-})
-
-primary.addEventListener('click', function(){
-    container.style.display = "none"
-    document.body.removeAttribute('style')
-    alert('Форма успешно отправлена!')
-})
-
-
-
-
-for (let i = 0; i < btn_2.length; i++) {
-    btn_2[i].onclick = function() {
-
-        /*Отключение прокрутки страницы*/
-        document.body.style.overflow = "hidden"
-        container.style.display = "block"
-        container.style.top = window.scrollY + "px"
-       
-    }
-}
