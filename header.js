@@ -5,12 +5,12 @@ const Header={
            `<img class="logo_website" src="resource/images/load.png" alt="Иконка сайта" width="40px" height="40px" style="float: left; margin-right: 15px; cursor: pointer;" onclick="location.href='https://sergeypeace.github.io/Wedding/index.html'">
            <nav>
                <ul>
-                   <li><a href='https://sergeypeace.github.io/Wedding/index.html'>Главная</a></li>
-                   <li><a href='https://sergeypeace.github.io/Wedding/tariff/tariff.html'>Тарифы</a></li>
-                   <li><a href='https://sergeypeace.github.io/Wedding/stocks/stocks.html'>Акции</a></li>
-                   <li><a href='https://sergeypeace.github.io/Wedding/reviews/reviews.html'>Отзывы</a></li>
-                   <li><a href='https://sergeypeace.github.io/Wedding/photoalbums/photoalbums.html'>Фотогалерея</a></li>
-                   <li><a href='https://sergeypeace.github.io/Wedding/contacts/contacts.html'>Контакты</a></li>
+                   <li><a href='https://sergeypeace.github.io/Wedding/index.html'>Мы</a></li>
+                   <li><a>Церемония</a></li>
+                   <li><a>Наши мастера</a></li>
+                   <li><a>Дворец бракосочетания</a></li>
+                   <li><a>Фотогалерея</a></li>
+                   <li><a>Контакты</a></li>
                </ul>
                </nav>
            <div class="header__contacts">

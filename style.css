@@ -50,7 +50,7 @@ nav a:hover{
 header li{
     list-style-type: none;
     display: inline; /* Отображать как строчный элемент */
-    margin-right: 5px; /* Отступ слева */
+    margin-right: 10px; /* Отступ слева */
     font-family: 'Praise', cursive;
     padding: 3px;
     color: #fff;
@@ -59,7 +59,7 @@ header li{
 
 .header__contacts{
     float: left;
-    max-width: 200px;
+    max-width: 300px;
     font-family: 'Praise', cursive;
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@ header li{
 .header__tel span{
     
     color: #fff;
-    font-size: 10pt;
+    font-size: 15pt;
 }
 
 
