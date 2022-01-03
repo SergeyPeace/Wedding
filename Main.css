@@ -1,6 +1,7 @@
 @media (max-device-width : 500px) {
   section{
     width: 100%;
+    height: auto;
   }
 }
 section { 
