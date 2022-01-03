@@ -255,5 +255,6 @@ h6{
   section:nth-of-type(1){
     background-attachment: scroll;
     background-image: url(resource/images/portrait_2.jpg); 
+    width: 100vw;
   }
 }
