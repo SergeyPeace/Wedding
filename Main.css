@@ -251,14 +251,49 @@ h6{
 }
 
 
+
+.for_us{
+  font-size: 1.7vw;
+  background-color: rgb(238, 210, 200);
+  padding: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.pamyat{
+  width: 50%; 
+  margin: 0 25%;  
+  font-family: 'Lobster', cursive; 
+  font-size: 30pt; 
+  display: flex; 
+  justify-content: center;
+}
+
+.pamyat_mesta{
+  text-align:center; 
+  font-size: 70pt; 
+  font-family: 'Lobster', cursive;
+}
+
+
 @media (max-width : 1245px) {
   section:nth-of-type(1){
     background-attachment: scroll;
     background-size: 100vw;
     max-height: 50vw;
- 
-
   }
-  
-}
+  .for_us{
+    flex-direction: column;
+    padding: 8% 0;
+  }
+  .pamyat{
+    width: 100%;
+    font-size: 20pt;
+  }
 
+  .pamyat_mesta{
+    font-size: 45pt;
+  }
+}
