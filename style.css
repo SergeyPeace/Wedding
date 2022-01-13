@@ -79,6 +79,12 @@ header li{
 }
 
 
+.logo_website{
+    float: left; 
+    margin-right: 15px; 
+    cursor: pointer;
+}
+
 
 /*Свойства шапки при уменьшении экрана*/
 @media (max-width: 980px) {

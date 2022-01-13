@@ -2,7 +2,7 @@ const Header={
     data(){
         return{
            HeaderInner:
-           `<img class="logo_website" src="resource/images/load.png" alt="Иконка сайта" width="40px" height="40px" style="float: left; margin-right: 15px; cursor: pointer;" onclick="location.href='https://sergeypeace.github.io/Wedding/index.html'">
+           `<img class="logo_website" src="resource/images/load.png" alt="Иконка сайта" width="40px" height="40px" onclick="location.href='https://sergeypeace.github.io/Wedding/index.html'">
            <nav>
                <ul>
                    <li><a href='https://sergeypeace.github.io/Wedding/index.html'>Мы</a></li>
@@ -10,7 +10,6 @@ const Header={
                    <li><a>Наши мастера</a></li>
                    <li><a>Дворец бракосочетания</a></li>
                    <li><a>Фотогалерея</a></li>
-                   <li><a>Контакты</a></li>
                </ul>
                </nav>
            <div class="header__contacts">
@@ -51,3 +50,23 @@ for (let i = 0; i !== document.getElementsByTagName('a').length; i++){
     }
 }
 
+
+/*Подключаем слушателя прокрутки страницы*/
+window.addEventListener("scroll", throttleScroll, false);
+
+/*Функция по активации анимации*/
+function throttleScroll(e) {
+
+    if (window.innerWidth < 1240){
+        document.querySelector(".header__contacts").style="display: none;"
+    }
+
+    if (window.innerWidth < 830){
+        document.querySelector(".logo_website").style="display: none;"
+    }
+
+    if (window.innerWidth > 1240){
+        document.querySelector(".header__contacts").style="display: flex;"
+        document.querySelector(".logo_website").removeAttribute('style')
+    }
+}

@@ -66,6 +66,13 @@ section {
   font-size: 0.5em;
 }
 
+
+.for_us_text{
+  opacity: 0;
+}
+
+
+
 .promises{
   margin: 30px 1vw;
 }
@@ -213,24 +220,18 @@ h6{
   }
 }
 
-/*Анимация появления блоков*/
-
-@keyframes about_us_anim{
-  from{opacity: 0; transform: translate(0, 50px)}
-  to{opacity: 1; transform: translate(0, 0)}
-}
 
 
-@keyframes ticket_img_anim{
-  from{opacity: 0; transform: rotate(25deg); }
-  to{opacity: 1; transform: rotate(0);}
-}
 
 
-@keyframes space_anim{
-  from{opacity: 0; transform: translate(0, 150px)}
-  to{opacity: 1; transform: translate(0, 0)}
-}
+
+
+
+
+
+
+
+
 
 
 
@@ -253,7 +254,7 @@ h6{
 
 
 .for_us{
-  font-size: 1.7vw;
+  font-size: 25pt;
   background-color: rgb(238, 210, 200);
   padding: 8%;
   display: flex;
@@ -262,6 +263,17 @@ h6{
   flex-direction: row;
 }
 
+.for_us h1{
+  text-align: center;
+  color: #292b31;
+  text-shadow: #D6BCA9 1px 1px;
+}
+
+.for_us h4{
+  text-indent: 20pt;
+  color: #34373e;
+  text-shadow: #D6BCA9 1px 1px;
+}
 .pamyat{
   width: 50%; 
   margin: 0 25%;  
@@ -278,6 +290,12 @@ h6{
   font-family: 'Lobster', cursive;
 }
 
+.for_us_image{
+  width: 100%;
+  min-width: 35vw;
+  opacity: 0;
+}
+
 
 @media (max-width : 1245px) {
   section:nth-of-type(1){
@@ -287,14 +305,38 @@ h6{
   }
   .for_us{
     flex-direction: column;
-    padding: 8% 0;
+    font-size: 20pt;
+    padding: 8%;
   }
+
+
+
   .pamyat{
     width: 100%;
     font-size: 20pt;
+    
   }
 
   .pamyat_mesta{
     font-size: 45pt;
   }
+}
+
+/*Анимация появления блоков*/
+
+@keyframes about_us_anim{
+  from{opacity: 0; transform: translate(0, 50px)}
+  to{opacity: 1; transform: translate(0, 0)}
+}
+
+
+@keyframes ticket_img_anim{
+  from{opacity: 0; transform:  translate(-200px, 0)}
+  to{opacity: 1; transform: translate(0, 0)}
+}
+
+
+@keyframes space_anim{
+  from{opacity: 0; transform: translate(0, 150px)}
+  to{opacity: 1; transform: translate(0, 0)}
 }

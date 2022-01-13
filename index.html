@@ -24,26 +24,31 @@
 
 
         <div class="for_us">
-            <img src="resource/images/About_us.png" alt="Наши фотографии" style='width: 70%;'>
-            <h4>Мы вот такие замечательные люди. Любите нас, а мы в ответ будем любить Вас и бла-бла-бла</h4>
+            <img class="for_us_image" src="resource/images/About_us.png" alt="Наши фотографии">
+            <div class = "for_us_text">
+                <h1>Дорогие гости!</h1> 
+                <h4>Мы будем рады видеть вас на нашем мероприятии, посвященному дню рождения новой ячейки общества. Дню рождения нашей новой семьи — Люда и Серёжа, а также котик Юджин, котороый будет ожидать нас дома для личных поздравлений!</h4></br>
+                <h4>Мы предвкушаем встречу с вами и понимаем, что в такое трудное для всего человечества время, в дни ПЦР-тестов, куряку-кодов и масок, нам выдалась феноменальная возможность сделать глоток свежего воздуха и собрать всех вас в covid free zone.</h4></br>
+                <h4>Мы ждём от вас улыбок и заряд позитивных эмоций, поддержки и добрых слов. И мы точно знаем, что этот день буден ЛЕГЕН... подожди, подожди... -ДАРНЫМ! Потому что этот вечер мы проведем в кругу семьи и близких нам друзей. Потому что это наш день!</h4>
+            </div>
         </div>
 
-        <div style="overflow: hidden; background-color: rgb(201, 163, 154); width: 100%; height: 50%; color: rgb(255, 246, 244); text-shadow: -1px -1px 1px rgba(0,0,0,0.4); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div style="user-select: none; overflow: hidden; background-color: rgb(201, 163, 154); width: 100%; height: 50%; color: rgb(255, 246, 244); text-shadow: -1px -1px 1px rgba(0,0,0,0.4); display: flex; flex-direction: column; justify-content: center; align-items: center;">
             <p class="pamyat_mesta">Памятные места</p>
             <div class="pamyat">
             
-            <div style="text-align:end; float: right; width: 40%; margin: 0 20px 0 0;">
-            <p>Московский зоопрак</p>
-            <p>Tres Amigos</p>
-            <p>AFP</p>
-            <p>ЦПКиО</p>
-            <p>Хельсинки</p></div>
-            <div style="text-align:start; width: 40%; margin: 0 0 0 20px;">
-              <p>Лагерь "Пионер"</p>
-              <p>Голицын Лофт</p>
-              <p>309к</p>
-              <p>Талин</p>
-              <p>Mollie`s Pub</p>
+            <div style="text-align:end; float: right; width: 40%; margin: 0 20px 0 0; display: flex; flex-direction: column; ">
+            <a href="https://moscowzoo.ru/" style="text-decoration: none; color: rgb(255, 246, 244);">Московский зоопрак</a>
+            <a href="https://www.tres-amigos.ru/" style="text-decoration: none; color: rgb(255, 246, 244);">Tres Amigos</a>
+            <a href="http://afp.ru/" style="text-decoration: none; color: rgb(255, 246, 244);">AFP</a>
+            <a href="https://elaginpark.org/" style="text-decoration: none; color: rgb(255, 246, 244);">ЦПКиО</a>
+            <a href="https://yandex.ru/maps/10493/helsinki/?ll=24.952342%2C60.169336&pt=24.952342%2C60.169336&source=entity_search&z=11" style="text-decoration: none; color: rgb(255, 246, 244);">Хельсинки</a></div>
+            <div style="text-align:start; width: 40%; margin: 0 0 0 20px; display: flex; flex-direction: column;">
+              <a href="https://www.cccpioner.com/" style="text-decoration: none; color: rgb(255, 246, 244);">Лагерь "Пионер"</a>
+              <a href="https://yandex.ru/profile/23955501835?no-distribution=1&source=wizbiz_new_map_single" style="text-decoration: none; color: rgb(255, 246, 244);">Голицын Лофт</a>
+              <a href="https://hspm.ru/" style="text-decoration: none; color: rgb(255, 246, 244);">309к</a>
+              <a href="https://yandex.ru/maps/11481/tallinn/?ll=24.745137%2C59.437425&pt=24.745137%2C59.437425&source=entity_search&z=11" style="text-decoration: none; color: rgb(255, 246, 244);">Таллин</a>
+              <a href="https://molly.su/mollies/" style="text-decoration: none; color: rgb(255, 246, 244);">Mollie`s Pub</a>
             </div>
           </div>
           <img src="resource/images/line_2.png" style="height: 9vw">
@@ -124,12 +129,12 @@ window.addEventListener("scroll", throttleScroll, false);
 /*Функция по активации анимации*/
 function throttleScroll(e) {
 
-    if (  getCoords(document.querySelector('.about_us')).top < 750 ){
-        document.querySelector('.about_us').style='animation-name: about_us_anim; animation-duration: 1.5s; opacity: 1;'
+    if (  getCoords(document.querySelector('.for_us_text')).top < 650 ){
+        document.querySelector('.for_us_text').style='animation-name: about_us_anim; animation-duration: 1.5s; opacity: 1;'
     }
 
-    if (  getCoords(document.querySelector('.ticket_img')).top < 550 ){
-        document.querySelector('.ticket_img').style='animation-name: ticket_img_anim; animation-duration: 1.5s; opacity: 1;'
+    if (  getCoords(document.querySelector('.for_us_image')).top < 650 ){
+        document.querySelector('.for_us_image').style='animation-name: ticket_img_anim; animation-duration: 1.64s; opacity: 1;'
     }
 
     if (  getCoords(document.querySelector('.addition')).top < 900 ){
@@ -139,6 +144,7 @@ function throttleScroll(e) {
     if (  getCoords(document.querySelector('.space')).top < 700 ){
         document.querySelector('.space').style='animation-name: space_anim; animation-duration: 1.5s; opacity: 1;'
     }
+
 
 
 /*Функия добавляет новый класс с инструкцией анимации к нужному элементу по его классу*/
