@@ -6,10 +6,10 @@ const Header={
            <nav>
                <ul>
                    <li><a href='https://sergeypeace.github.io/Wedding/index.html'>Мы</a></li>
-                   <li><a>Церемония</a></li>
-                   <li><a>Наши мастера</a></li>
-                   <li><a>Дворец бракосочетания</a></li>
-                   <li><a>Фотогалерея</a></li>
+                  <!-- <li><a>Церемония</a></li> -->
+                  <!--  <li><a>Наши мастера</a></li> -->
+                  <!--  <li><a>Дворец бракосочетания</a></li> -->
+                  <!--  <li><a>Фотогалерея</a></li> -->
                </ul>
                </nav>
            <div class="header__contacts">
