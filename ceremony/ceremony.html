@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Церемония</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="ceremony.css">
+    <link rel="shortcut icon" href="../resource/images/logotip.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lobster&family=Praise&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container" id='form' style="display: none;"></div>
+    <header id="Header" v-cloak>
+        <div class="header_inner" v-html="HeaderInner"></div>
+    </header>
+    <div class="osnovnoy_content">
+        <section>
+            <div class="nashe_photo">
+            <h4>Церемония</h4>
+            </div>
+        </section>
+
+
+        <div class="for_us">
+            <div class = "for_us_text">
+                <h1>Информация о мероприятии!</h1> 
+                <h4>Торжество пройдёт 22 января 2022 года в банкетном зале «Amulet» по адресу ул. Восстания 35. Вход с угла дома. Время начала фуршета — 12:30. Убедительно просим гостей не опаздывать.</h4></br>
+                <h4>Ресторан арендован полностью под наше мероприятие, поэтому вход свободный. Заведение включает в себя барную зону на входе (Welcome Zone), основной и фуршетный зал с фотозоной. Все гости смогут запечатлеть момент празднования события на предусмотренный нами полароид и вклеить фотокарточку в наш альбом пожеланий.</h4></br>
+                <h4>Ресторан удивит Вас изумительными лакомствами, подготовленными к праздничному столу, сервисом европейского уровня и, конечно же, доброжелательностью и гостеприимностью.</h4>
+            </div>
+
+            <div class="for_us_imageS">
+                <img class="for_us_image img_1" src="../resource/images/ceremony/table.jpg" alt="Фотография стола">
+                <img class="for_us_image img_2" src="../resource/images/ceremony/napkin.jpg" alt="Фотография сервировки">
+            </div>
+        </div>
+
+        <div style="user-select: none; overflow: hidden; background-color: #f4dada; width: 100%; height: 50%; color: rgb(255, 246, 244); text-shadow: -1px -1px 1px rgba(0,0,0,0.4); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <p class="pamyat_mesta">Цвета мероприятия</p>
+            <div class="pamyat" style="display: none;">
+            
+                <div style="text-align:end; float: right; width: 40%; margin: 0 20px 0 0; display: flex; flex-direction: column; ">
+                    <a href="https://moscowzoo.ru/" style="text-decoration: none; color: rgb(255, 246, 244);">Московский зоопрак</a>
+                    <a href="https://www.tres-amigos.ru/" style="text-decoration: none; color: rgb(255, 246, 244);">Tres Amigos</a>
+                    <a href="http://afp.ru/" style="text-decoration: none; color: rgb(255, 246, 244);">AFP</a>
+                    <a href="https://elaginpark.org/" style="text-decoration: none; color: rgb(255, 246, 244);">ЦПКиО</a>
+                    <a href="https://yandex.ru/maps/10493/helsinki/?ll=24.952342%2C60.169336&pt=24.952342%2C60.169336&source=entity_search&z=11" style="text-decoration: none; color: rgb(255, 246, 244);">Хельсинки</a>
+                </div>
+                <div style="text-align:start; width: 40%; margin: 0 0 0 20px; display: flex; flex-direction: column;">
+                    <a href="https://www.cccpioner.com/" style="text-decoration: none; color: rgb(255, 246, 244);">Лагерь "Пионер"</a>
+                    <a href="https://yandex.ru/profile/23955501835?no-distribution=1&source=wizbiz_new_map_single" style="text-decoration: none; color: rgb(255, 246, 244);">Голицын Лофт</a>
+                    <a href="https://hspm.ru/" style="text-decoration: none; color: rgb(255, 246, 244);">309к</a>
+                    <a href="https://yandex.ru/maps/11481/tallinn/?ll=24.745137%2C59.437425&pt=24.745137%2C59.437425&source=entity_search&z=11" style="text-decoration: none; color: rgb(255, 246, 244);">Таллин</a>
+                    <a href="https://molly.su/mollies/" style="text-decoration: none; color: rgb(255, 246, 244);">Mollie`s Pub</a>
+                </div>
+            </div>
+            <div style="display:flex; flex-direction: row;">
+                <div class="svet svet_1" title='Ментоловый'></div>
+                <div class="svet svet_2" title='Персиковый'></div>
+                <div class="svet svet_3" title='Серый'></div>
+                <div class="svet svet_4" title='Нежно-розовый'></div>
+            </div>
+        </div>
+
+        <div class="wave" style="display: none;"></div>
+
+        <section style="display: none;">
+            <h4>О нас</h4>
+            <hr>
+            <p>Серёжа и Люда</p>
+            <div class="about_us">
+                <div class="party promises">
+                    <img src="resource/images/party.png" alt="Вечеринка">
+                    <h3>Любим Звёздные войны!</h3>
+                    <p>Текст почему </p>
+                </div>
+                
+                <div class="game promises">
+                    <img src="resource/images/game.png" alt="Играй">
+                    <h3>Обожаем итальянскую кухню</h3>
+                    <p>Текст почему</p>
+                </div>
+                
+                <div class="enjoy promises">
+                    <img src="resource/images/enjoy.png" alt="Наслаждайся">
+                    <h3>Летом изучали змеиный язык</h3>
+                    <p>Текст почему</p>
+                </div>
+            </div>
+            <div>
+                <img class="ticket_img" src="resource/images/ticket.png" alt="Наслаждайся">
+                <p class="addition">Наше заведение находится в самом сердце Санкт-Петербурга и работает ежедневно, чтобы вы могли хорошо провести время компанией или парой. Для этого мы приготовили для вас 5 раскошных залов со своей индивидуальной тематикой. Романтические свидания под луной и звездами, детские праздники и дружеские посиделки, фотосессии и веселые дни рождения - всё это ждет вас в «Азбука Кино».</p>
+                <button class="btn_type_1 btn_hall" onclick="window.location.href = 'tariff/tariff.html';">Выбрать зал</button>
+            </div>
+           </section>
+           <div class="wave relief_2" style="display: none;"></div>
+
+
+        <section class="choice_section">
+            <p class='space'>Пять простых фактов о нас</p>
+            <ul class="choice">
+                <li class="list_item"><img src="../resource/images/darth-vader.png" alt="Любим Звёздные войны!"><div><h6>Любим Звёздные войны!</h6><p>Кино показывает, что добро (светлая сторона), всегда побеждает зло (темная сторона) и что можно быть ни кем, а стать всем! А еще фильм учит, что нельзя грустить — Падме погрустила и умерла!</p></div></li>
+                <li class="list_item"><img src="../resource/images/pasta.png" alt="Обожаем итальянскую кухню"><div><h6>Обожаем итальянскую кухню</h6><p>Лазанья, Спагетти (особенно Карбонара), Равиоли, Тортеллини, Ризотто, Пицца и многое другое. Итальянская кухня – это не просто еда, это целое искусство, характеризующее атмосферу этой страны, дух ее традиций и национальный колорит.</p></div></li>
+                <li class="list_item"><img src="../resource/images/python.png" alt="Летом изучали змеиный язык"><div><h6>Летом изучали змеиный язык</h6><p>Ну это уже магия вне Хогвартса какая-то. Однако компьютер был готов общаться именно на нем. Знания змеиного языка пригодились в создании приложений, игр и даже в работе с Джейсоном.</p></div></li>
+                <li class="list_item"><img src="../resource/images/clapperboard.png" alt="Знаем толк в фильмах по 150₽"><div><h6>Знаем толк в фильмах по 150₽</h6><p>В этой стези мы профи 100-го lvl-а! Зачем, как говорится, платить больше? Одна из наших традиций — ходить в кино каждый вторник на совершено любой фильм в прокате за смешные 150 рублей. Благодаря этой традиции, мы посмотрели такие фильмы, на которые никогда бы в здравом уме и не взглянули. Иногда шедевры кроются на дне. </p></div></li>
+                <li class="list_item"><img src="../resource/images/videogame.png" alt="Недавно прошли игру It takes two"><div><h6>Недавно прошли игру "It takes two"</h6><p>Потрясающая игра, которая учит преодолевать трудности в команде по жизни. Как бы трудно не было, как бы вы не ссорились и не переживали, всегда нужно ставить общие цели и добиваться их вместе! Дорогу осилит идущий.</p></div></li>
+            </ul>
+        </section>
+
+    </div>
+
+   
+    <footer id="Footer" v-cloak>
+        <div class="footer_inner" v-html="FooterInner"></div>
+    </footer>
+
+
+
+<script>
+
+/*Блок методов для отслеживания прокрутки страницы для внедрения анимации элементов*/
+/*Определяем вверхнюю границу блока*/
+function getCoords(elem) {
+
+    let box = elem.getBoundingClientRect();
+
+    return {
+        top: box.top
+    }
+}
+
+let count =  0
+let element
+/*Подключаем слушателя прокрутки страницы*/
+window.addEventListener("scroll", throttleScroll, false);
+
+/*Функция по активации анимации*/
+function throttleScroll(e) {
+
+    if (  getCoords(document.querySelector('.for_us_text')).top < 650 ){
+        document.querySelector('.for_us_text').style='animation-name: about_us_anim; animation-duration: 1.5s; opacity: 1;'
+    }
+
+    if (  getCoords(document.querySelector('.img_1')).top < 650 ){
+        document.querySelector('.img_1').style='animation-name: for_us_img_anim; animation-duration: 1.64s; opacity: 1;'
+    }
+
+    if (  getCoords(document.querySelector('.img_2')).top < 650 ){
+        document.querySelector('.img_2').style='animation-name: for_us_img_anim_2; animation-duration: 1.64s; opacity: 1;'
+    }
+
+    if (  getCoords(document.querySelector('.addition')).top < 900 ){
+        document.querySelector('.addition').style='animation-name: about_us_anim; animation-duration: 1.5s; opacity: 1;'
+    }
+
+    if (  getCoords(document.querySelector('.space')).top < 700 ){
+        document.querySelector('.space').style='animation-name: space_anim; animation-duration: 1.5s; opacity: 1;'
+    }
+
+
+
+/*Функия добавляет новый класс с инструкцией анимации к нужному элементу по его классу*/
+/*Поскольку в данном случае идёт работа со списком, то нужно поочередно выбирать один из его элементов,
+когда пользователь опускается до нужной высоты страницы*/
+
+    if (  getCoords(document.querySelectorAll('.list_item')[count]).top < 800 ){
+        
+            
+        element = document.querySelectorAll('.list_item')[count]
+        if (count !== (document.getElementsByClassName('list_item').length-1)){
+            count = count + 1
+        }
+        element.classList.add('list_item_2')  
+        
+    }  
+}
+</script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="../form/form.js"></script>
+    <script src="../header.js"></script>
+    <script src="../footer.js"></script>
+</body>
+</html>
