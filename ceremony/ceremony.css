@@ -238,6 +238,16 @@ h6{
 
 
 /*Цвета свадьбы*/
+.colona_sveta{
+  display:flex; 
+  flex-direction: row;
+}
+
+.min_colona{
+  display:flex; 
+  flex-direction: row;
+}
+
 .svet{
   display: block;
   width: 170px;
@@ -363,6 +373,14 @@ h6{
 
   .pamyat_mesta{
     font-size: 45pt;
+  }
+  
+}
+
+@media (max-width : 960px) {
+  .colona_sveta{
+    display:flex; 
+    flex-direction: column;
   }
 }
 
